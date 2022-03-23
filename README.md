@@ -3,7 +3,7 @@ API project
 
 <h1>API Website Project</h1>
 
-<p> ReadME created by Banel, who loves viewing home tours on  <a href="hhttps://www.apartmenttherapy.com/">Apartment Therapy.</a> 
+<p> ReadME created by Banel, who loves viewing home tours on  <a href="https://www.apartmenttherapy.com/">Apartment Therapy.</a> 
 
 <h2>Overview</h2>
 <hr>
