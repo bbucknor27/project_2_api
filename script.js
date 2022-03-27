@@ -12,7 +12,7 @@ button.addEventListener('click', async () => {
     emoImg.innerText = emoji
 
 })
-
+//////////// missing something in the code above to generate emojis
 
 
 ///////////// TO DO: emoji api page had the code below to add figure out how to make it work. maybe create a json file.
