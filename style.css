@@ -1,10 +1,23 @@
-body{
+body {
     background-color: #fbe6ff;
 }
 
-h1{
+h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     color: #42f8bb;
 }
 
+.emoji-one {
+    position: relative;
+    /* width: 100%; */
+    max-width: 500px;
+    background-color: #c7ffad;
+    border: 5px dashed #adceff;
+    width: 500px;
+}
+
+.emoji-one img {
+    width: 100%;
+    height: auto;
+}
