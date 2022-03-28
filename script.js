@@ -1,19 +1,19 @@
-const button = document.querySelector('button')
-const emojiInput = document.querySelector('input')
-const imageDiv = document.querySelector('div')
+// const button = document.querySelector('button')
+// const emojiInput = document.querySelector('input')
+// const imageDiv = document.querySelector('div')
 
-const emoImg = document.querySelector('.emoImg')
+// const emoImg = document.querySelector('.emoImg')
 
-button.addEventListener('click', async () => {
-    let response = await axios.get("https://emojihub.herokuapp.com/api/random")
+// button.addEventListener('click', async () => {
+//     let response = await axios.get("https://emojihub.herokuapp.com/api/random")
 
-    console.log(response.data)
+//     console.log(response.data)
 
-    let emoji = response.data.htmlCode[0]    
-    emoImg.innerText = emoji
+//     let emoji = response.data.htmlCode[0]    
+//     emoImg.innerText = emoji
 
-// })
-//////////// missing something in the code above to generate emojis
+// // })
+// //////////// missing something in the code above to generate emojis
 
 
 
@@ -23,18 +23,17 @@ button.addEventListener('click', async () => {
 ///===========================================================================
 ///===========================================================================
 
-// const button = document.querySelector('button')
-// const breedInput = document.querySelector('input')
-// const imageDiv = document.querySelector('div')
+const button = document.querySelector('button')
+const breedInput = document.querySelector('input')
+const imageDiv = document.querySelector('div')
 
-// button.addEventListener('click', async () => {
-//     let response = await axios.get("https://api.thecatapi.com/v1/images/search")
-//     console.log(response.data)
+button.addEventListener('click', async () => {
+    let response = await axios.get("https://api.thecatapi.com/v1/images/search")
+    console.log(response.data)
 
-//     let catPic = response.data[0].url      //this stores the data. response is an object,
-//     imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
-// })
-
+    let catPic = response.data[0].url      //this stores the data. response is an object,
+    imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
+})
 
 ///===========================================================================
 ///===========================================================================
