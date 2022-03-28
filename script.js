@@ -1,15 +1,19 @@
 const button = document.querySelector('button')
-const breedInput = document.querySelector('input')
+const emojiInput = document.querySelector('input')
 const imageDiv = document.querySelector('div')
 
+const emoImg = document.querySelector('.emoImg')
+
 button.addEventListener('click', async () => {
-    let response = await axios.get("https://www.fishwatch.gov/api/species")
-    // let response = await axios.get("https://api.thecatapi.com/v1/images/search")
+    let response = await axios.get("https://emojihub.herokuapp.com/api/random")
+
     console.log(response.data)
 
-    let catPic = response.data[0].url      //this stores the data. response is an object,
-    imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
-})
+    let emoji = response.data.htmlCode[0]    
+    emoImg.innerText = emoji
+
+// })
+//////////// missing something in the code above to generate emojis
 
 
 
@@ -18,26 +22,25 @@ button.addEventListener('click', async () => {
 ///===========================================================================
 ///===========================================================================
 ///===========================================================================
-///===========================================================================
-///===========================================================================
-///===========================================================================
-///===========================================================================
+
 // const button = document.querySelector('button')
-// const emojiInput = document.querySelector('input')
+// const breedInput = document.querySelector('input')
 // const imageDiv = document.querySelector('div')
 
-// const emoImg = document.querySelector('.emoImg')
-
 // button.addEventListener('click', async () => {
-//     let response = await axios.get("https://emojihub.herokuapp.com/api/random")
-
+//     let response = await axios.get("https://api.thecatapi.com/v1/images/search")
 //     console.log(response.data)
 
-//     let emoji = response.data.htmlCode[0]    
-//     emoImg.innerText = emoji
-
+//     let catPic = response.data[0].url      //this stores the data. response is an object,
+//     imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
 // })
-//////////// missing something in the code above to generate emojis
+
+
+///===========================================================================
+///===========================================================================
+///===========================================================================
+///===========================================================================
+
 ///===========================================================================
 ///===========================================================================
 ///===========================================================================
@@ -58,15 +61,18 @@ button.addEventListener('click', async () => {
 //     console.log(response.data);
 //     function filter
 
-//         name: "hugging face",
-//         category: "smileys and people",
-//         group: "face positive",
-//         htmlCode: [
-//           "&#129303;"
-//         ],
-//         unicode: [
-//           "U+1F917"
-//         ]
+//     {
+//       "name": "hugging face",
+//       "category": "smileys and people",
+//       "group": "face positive",
+//       "htmlCode": [
+//         "&#129303;"
+//       ],
+//       "unicode": [
+//         "U+1F917"
+//       ]
+//     }
+  
       
 //     }
 
@@ -210,4 +216,4 @@ button.addEventListener('click', async () => {
 
 //     let catPic = response.data[0].url      //this stores the data. response is an object,
 //     imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
-// })
+//// })
