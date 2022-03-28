@@ -21,3 +21,21 @@ h1 {
     width: 100%;
     height: auto;
 }
+
+.meow-changer {
+    display: flex;
+    /* float:right; */
+    top: 50%;
+    left: 50%;
+    background-color: #ffadc1;
+    color: rgb(219, 14, 14);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.meow-changer:hover {
+    background-color:#ffd2ad;
+}
