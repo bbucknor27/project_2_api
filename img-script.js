@@ -3,7 +3,7 @@ const foodInput = document.querySelector('input')
 const imageDiv = document.querySelector('div')
 
 button.addEventListener('click', async () => {
-    let response = await axios.get("https://foodish-api.herokuapp.com/api/")
+    let response = await axios.get("https://foodish-api.herokuapp.com/images/burger/")
     console.log(response.data)
 
     let foodPic = response.data[0].url      //this stores the data. response is an object,

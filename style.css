@@ -68,3 +68,18 @@ h1 {
     background-color:#000000;
 }
 
+.cat-back {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    background-color: #e100ff;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ffd900;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 136px;
+}
+  
+.cat-back:hover {
+    background-color:#ff7300;

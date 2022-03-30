@@ -1,3 +1,37 @@
+const button = document.querySelector('button')
+const breedInput = document.querySelector('input')
+const imageDiv = document.querySelector('div')
+
+button.addEventListener('click', async () => {
+    let response = await axios.get("https://api.thecatapi.com/v1/images/search")
+    console.log(response.data)
+
+    let catPic = response.data[0].url      //this stores the data. response is an object,
+    imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const button = document.querySelector('button')
 // const emojiInput = document.querySelector('input')
 // const imageDiv = document.querySelector('div')
@@ -23,17 +57,7 @@
 ///===========================================================================
 ///===========================================================================
 
-const button = document.querySelector('button')
-const breedInput = document.querySelector('input')
-const imageDiv = document.querySelector('div')
 
-button.addEventListener('click', async () => {
-    let response = await axios.get("https://api.thecatapi.com/v1/images/search")
-    console.log(response.data)
-
-    let catPic = response.data[0].url      //this stores the data. response is an object,
-    imageDiv.innerHTML = `<img src=${catPic}>`     //this will run for response which is dog pic when we search pug
-})
 
 ///===========================================================================
 ///===========================================================================
